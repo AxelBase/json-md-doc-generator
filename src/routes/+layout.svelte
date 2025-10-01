@@ -5,7 +5,7 @@
 
   // --- Configuration ---
   // IMPORTANT: Replace with your actual PayPal username
-  const paypalUsername = 'YOUR_PAYPAL_USERNAME'; // <--- PASTE YOUR USERNAME HERE
+  const paypalUsername = 'AxelLab427'; // <--- PASTE YOUR USERNAME HERE
   const donationAmounts = [1, 3, 5, 10];
 
   // --- Dropdown State Management ---
