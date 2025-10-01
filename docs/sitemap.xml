@@ -58,7 +58,6 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Privacy Policy -->
   <url>
     <loc>https://axelbase.github.io/json-md-doc-generator/privacy/</loc>
     <lastmod>2025-10-01</lastmod>
@@ -66,7 +65,6 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Terms and Conditions -->
   <url>
     <loc>https://axelbase.github.io/json-md-doc-generator/terms/</loc>
     <lastmod>2025-10-01</lastmod>
