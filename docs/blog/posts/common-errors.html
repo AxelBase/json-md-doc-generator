@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AxelLab-Logo.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/0.Bh_CX5cX.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.D73QUJIC.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bhp-D9Jm.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/Bmy3Ah6d.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/laXBm9W_.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.6fYujeBF.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/IHki7fMi.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.DVP3PLQm.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D6YF6ztN.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/4.BZKtxCXF.js"><title>JSON to Markdown Doc Generator</title><!-- HEAD_svelte-44ysnw_START --><meta name="description" content="Instantly convert complex JSON into clean, readable Markdown documentation. Privacy-first, client-side processing."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><!-- HEAD_svelte-44ysnw_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div>   <header class="custom-navbar"><nav class="container" style="display: flex; justify-content: space-between; align-items: center;"><div style="display: flex; align-items: center; gap: 1rem;"><a href="../../" aria-label="Home" data-svelte-h="svelte-rkm7h8"><img src="../../AxelLab-Logo.ico" alt="AxelBase Logo" class="navbar-brand-logo"></a> <a class="navbar-brand-text" href="../../" style="text-decoration: none;" data-svelte-h="svelte-pa4unb">AxelBase</a> <div class="coffee-container"><button class="coffee-button" data-svelte-h="svelte-yxlb23"><span>☕</span> <span>Buy me a coffee</span></button> </div></div> <ul style="list-style: none; display: flex; align-items: center; gap: 2rem; margin: 0;" data-svelte-h="svelte-1biitzk"><li><a class="nav-link" href="../../">Home</a></li> <li><a class="nav-link" href="../../#about">About</a></li> <li><a class="nav-link" href="../../#how-to-use">How to use</a></li> <li><a class="nav-link" href="../../#faq">FAQ</a></li> <li><a class="nav-link" href="../../blog">Blog</a></li></ul></nav></header> <main class="container" style="flex-grow: 1; padding-top: 4rem; padding-bottom: 4rem;"><div class="container py-4" style="max-width: 800px;" data-svelte-h="svelte-y8qbis"><article><h1 class="mb-4">Common JSON Validation Errors (and Fixes)</h1> <p>When using the json-md-doc-generator tool, you might encounter validation errors if your JSON input is malformed. These errors are designed to help you troubleshoot quickly (per FR5.1). This article lists the most frequent issues—missing commas, unquoted keys, trailing commas, and mismatched brackets—along with examples of invalid JSON, the error messages you’ll see, and the corrected versions to get you back on track.</p> <h2>Missing Commas</h2> <p>When JSON contains an array of simple values (e.g., strings, numbers), the tool converts it into a Markdown bullet list. This is ideal for task lists or itemized data. Example:</p> <pre><script type="text/plain">{ "name": "Alice" "age": 30 }</script></pre> <p>Converts to:</p> <pre>## name
+Alice
+## age
+30</pre> <p>This format is perfect for quick readability and can be extended with nested lists if needed.</p> <h2>Unquoted Keys</h2> <p>For arrays of objects, the tool generates Markdown tables, with keys becoming column headers. This is great for structured data like team rosters or project milestones. Example:</p> <pre><script type="text/plain">{ name: "Alice", age: 30 }</script></pre> <p>Converts to:</p> <pre>## name
+Alice
+## age
+30</pre> <p>Tables are automatically aligned and can handle multiple fields, making complex data digestible.</p> <h2>Trailing Commas</h2> <p>Nested JSON objects are transformed into a hierarchy of Markdown headings, allowing for deep navigation. Example:</p> <pre><script type="text/plain">{ "name": "Alice", "age": 30, }</script></pre> <p>Converts to:</p> <pre>## name
+Alice
+## age
+30</pre> <p>This structure mirrors the JSON nesting, making it easy to drill down into details.</p> <h2>Mismatched Brackets</h2> <p>The tool orders JSON keys consistently, ensuring that the resulting Markdown structure doesn’t vary. For example:</p> <pre><script type="text/plain">{ "items": [ "a", "b" }</script></pre> <p>Converts to:</p> <pre>## items
+- a
+- b</pre> <h2>Troubleshooting Tips</h2> <p>- Use consistent key names for uniform table headers.
+        - Keep arrays of objects small for readability; split large datasets if necessary.
+        - Leverage nesting to organize complex projects into logical sections.</p> <p>Experiment with the tool using these examples. Upload a `.json` file or paste the text to see how arrays and objects transform into polished Markdown, enhancing your documentation efficiency.</p></article> <div style="margin-top: 3rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;"><a href="../../blog">← Back to Blog</a></div></div></main> <footer class="custom-footer"><div class="container" style="display: flex; justify-content: space-between; align-items: center;"><p class="footer-text" style="margin: 0;">© 2025 AxelBase — JSON to Markdown Doc Generator</p> <div style="display: flex; gap: 1.5rem;" data-svelte-h="svelte-xq1c4"><a href="../../privacy" class="footer-link">Privacy Policy</a> <a href="../../terms" class="footer-link">Terms and Conditions</a></div></div></footer> 
+			
+			<script>
+				{
+					__sveltekit_566tsp = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/json-md-doc-generator"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.D73QUJIC.js"),
+						import("../../_app/immutable/entry/app.6fYujeBF.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
