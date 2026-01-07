@@ -1,73 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://json-md-doc-generator.vercel.app/</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/blog.html/</loc>
-    <lastmod>2025-10-01</lastmod>
+    <loc>https://json-md-doc-generator.vercel.app/blog.html</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/blog/posts/common-errors.html/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://json-md-doc-generator.vercel.app/blog/posts/post1.html</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/blog/posts/formatting-arrays-objects.html/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://json-md-doc-generator.vercel.app/blog/posts/post2.html</loc>
+    <lastmod>2025-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/blog/posts/getting-started.html/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://json-md-doc-generator.vercel.app/blog/posts/post3.html</loc>
+    <lastmod>2025-10-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/blog/posts/markdown-for-teams.html/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://json-md-doc-generator.vercel.app/blog/posts/post4.html</loc>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/blog/posts/privacy-first-tools.html/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://json-md-doc-generator.vercel.app/blog/posts/post5.html</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/blog/posts/reproducible-docs.html/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://json-md-doc-generator.vercel.app/blog/posts/post6.html</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/blog/posts/why-convert.html/</loc>
-    <lastmod>2025-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://json-md-doc-generator.vercel.app/blog/posts/post7.html</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
-
+    <url>
+    <loc>https://json-md-doc-generator.vercel.app/blog/posts/post8.html</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+    <url>
+    <loc>https://json-md-doc-generator.vercel.app/blog/posts/post9.html</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+    <url>
+    <loc>https://json-md-doc-generator.vercel.app/blog/posts/post10.html</loc>
+    <lastmod>2025-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/privacy.html/</loc>
-    <lastmod>2025-10-01</lastmod>
+    <loc>https://json-md-doc-generator.vercel.app/privacy.html</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
-    <loc>https://axelbase.github.io/json-md-doc-generator/terms.html/</loc>
-    <lastmod>2025-10-01</lastmod>
+    <loc>https://json-md-doc-generator.vercel.app/terms.html</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

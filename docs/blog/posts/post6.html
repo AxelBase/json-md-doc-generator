@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AxelLab-Logo.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/0.C6pnwlCA.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/10.BNZjNWNr.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.C4d2YBDx.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D9WHCvr_.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/l8Oz43E9.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/808LiJSo.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.CaJs4o-V.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/IHki7fMi.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.3nqaWF2f.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/10.CHGLmJFi.js"><title>Formatting Arrays: Lists vs. Tables | Blog</title><!-- HEAD_svelte-44ysnw_START --><meta name="description" content="Instantly convert complex JSON into clean, readable Markdown documentation. Privacy-first, client-side processing."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><!-- HEAD_svelte-44ysnw_END --><!-- HEAD_svelte-l4klok_START --><meta name="description" content="When and why the converter chooses bullet lists for simple arrays versus full Markdown tables for arrays containing objects."><meta property="og:title" content="Formatting Arrays: Lists vs. Tables | Blog"><meta property="og:description" content="When and why the converter chooses bullet lists for simple arrays versus full Markdown tables for arrays containing objects."><meta property="og:url" content="../../blog/posts/post6"><meta property="og:type" content="article"><meta name="twitter:card" content="summary_large_image"><!-- HEAD_svelte-l4klok_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div>   <header class="custom-navbar"><nav class="container" style="display: flex; justify-content: space-between; align-items: center;"><div style="display: flex; align-items: center; gap: 1rem;"><a href="../../" aria-label="Home" data-svelte-h="svelte-rkm7h8"><img src="../../AxelLab-Logo.ico" alt="AxelBase Logo" class="navbar-brand-logo"></a> <a class="navbar-brand-text" href="../../" style="text-decoration: none;" data-svelte-h="svelte-pa4unb">AxelBase</a> <div class="coffee-container svelte-mobxso"><button class="coffee-button d-flex align-items-center gap-2 text-white border-0 px-4 py-2 rounded-pill shadow-sm svelte-mobxso" aria-label="Support options" data-svelte-h="svelte-18n2fem"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="svelte-mobxso"><path d="M2,21V19H20V21H2M20,8V5H4V8H20M20,10H4V13C4,14.38 4.5,15.63 5.31,16.58L11.64,19H12.36L18.69,16.58C19.5,15.63 20,14.38 20,13V10M16,2H8V4H16V2Z"></path></svg> <span class="d-none d-sm-inline fw-semibold">Buy me a Coffee</span> <span class="d-sm-none fw-semibold">Coffee</span></button> </div></div> <ul style="list-style: none; display: flex; align-items: center; gap: 2rem; margin: 0;" data-svelte-h="svelte-1biitzk"><li><a class="nav-link" href="../../">Home</a></li> <li><a class="nav-link" href="../../#about">About</a></li> <li><a class="nav-link" href="../../#how-to-use">How to use</a></li> <li><a class="nav-link" href="../../#faq">FAQ</a></li> <li><a class="nav-link" href="../../blog">Blog</a></li></ul></nav></header> <main class="container" style="flex-grow: 1; padding-top: 4rem; padding-bottom: 4rem;">   <div class="container fade-in post-layout svelte-14tn0ro" data-svelte-h="svelte-bc6g72"><div class="breadcrumbs svelte-14tn0ro"><a href="../../blog" class="svelte-14tn0ro">Blog</a> <span>/</span> <p class="svelte-14tn0ro">Formatting Arrays: Lists vs. Tables</p></div> <article class="prose svelte-14tn0ro"><h1 class="svelte-14tn0ro">Formatting Arrays: Lists vs. Tables</h1> <p class="post-meta svelte-14tn0ro">Published: January 07, 2026</p> <p class="svelte-14tn0ro">Arrays are one of the most common structures in JSON data, and the JSON to Markdown Doc Generator applies smart rules to decide whether to render them as bullet lists or full tables. This decision greatly affects readability and is based entirely on the type of items the array contains.</p> <p class="svelte-14tn0ro">When an array holds only primitive values—such as strings, numbers, booleans, or null—the tool automatically formats it as a simple bullet list. Each item becomes a separate list entry under the parent heading. This approach keeps the output clean and concise for enumerations like tags, categories, status codes, or options.</p> <p class="svelte-14tn0ro">Bullet lists are ideal for these cases because they are quick to scan and require minimal horizontal space. They integrate naturally into the document flow without disrupting the hierarchy created by headings.</p> <h2 class="svelte-14tn0ro">When Tables Are Used</h2> <ul class="svelte-14tn0ro"><li class="svelte-14tn0ro">Arrays containing objects trigger table generation</li> <li class="svelte-14tn0ro">Table headers are built from all unique keys across objects</li> <li class="svelte-14tn0ro">Each object becomes a row with aligned cells</li> <li class="svelte-14tn0ro">Missing keys result in empty cells for consistency</li></ul> <p class="svelte-14tn0ro">Tables provide the structure needed when data has multiple attributes per item. For example, an array of user records with name, email, and role fields renders as a proper Markdown table with clear headers and rows. This makes comparison and reference much easier than a nested list would allow.</p> <p class="svelte-14tn0ro">The generator ensures tables follow standard Markdown syntax, including the header separator row, so they render correctly on GitHub, GitLab, static site generators, and most viewers.</p> <p class="svelte-14tn0ro">Empty arrays are handled gracefully: primitive empty arrays show as an empty bullet list, while object arrays produce a table with headers but no data rows. This maintains document consistency even with optional or empty datasets.</p> <p class="svelte-14tn0ro">Mixed-type arrays—containing both primitives and objects—are not officially supported and may lead to unexpected results. For best output, keep array items uniform in type.</p> <p class="svelte-14tn0ro">Understanding this distinction helps when preparing JSON for documentation. If tabular presentation is desired, structure data as an array of objects. For simple lists, use primitives directly.</p> <p class="svelte-14tn0ro">This automatic selection balances simplicity with power, applying the most appropriate format without requiring user configuration.</p> <p class="svelte-14tn0ro">The result is professional-looking documentation that highlights relationships in data naturally.</p> <h2 class="svelte-14tn0ro">Frequently Asked Questions</h2> <details class="svelte-14tn0ro"><summary class="svelte-14tn0ro">Can I force a list instead of a table?</summary> <p class="svelte-14tn0ro">No, the format is determined automatically by item type.</p></details> <details class="svelte-14tn0ro"><summary class="svelte-14tn0ro">What if objects have different keys?</summary> <p class="svelte-14tn0ro">All unique keys become columns; missing values are empty cells.</p></details> <details class="svelte-14tn0ro"><summary class="svelte-14tn0ro">Are tables sortable in the output?</summary> <p class="svelte-14tn0ro">No, plain Markdown tables are static but readable.</p></details> <p class="italic-note svelte-14tn0ro">Choose the right array structure to get the perfect Markdown format automatically.</p></article> </div></main> <footer class="custom-footer"><div class="container" style="display: flex; justify-content: space-between; align-items: center;"><p class="footer-text" style="margin: 0;">© 2026 AxelBase — JSON to Markdown Doc Generator</p> <div style="display: flex; gap: 1.5rem;" data-svelte-h="svelte-gjfyv8"><a href="../../privacy" class="footer-link">Privacy Policy</a> <a href="../../terms" class="footer-link">Terms and Conditions</a></div></div> </footer> 
+			
+			<script>
+				{
+					__sveltekit_7y5b20 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/json-md-doc-generator"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.C4d2YBDx.js"),
+						import("../../_app/immutable/entry/app.CaJs4o-V.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 10],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">

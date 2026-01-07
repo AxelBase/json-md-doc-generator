@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://axelbase.github.io/json-md-doc-generator/
+Sitemap: https://json-md-doc-generator.vercel.app/sitemap.xml

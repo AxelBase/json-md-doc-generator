@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../AxelLab-Logo.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../../_app/immutable/assets/0.C6pnwlCA.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/7.TD6yoX2T.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.C4d2YBDx.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/D9WHCvr_.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/l8Oz43E9.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/808LiJSo.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.CaJs4o-V.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/IHki7fMi.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.3nqaWF2f.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/8.C-FRyMOr.js"><title>Understanding the Core Conversion Rules | Blog</title><!-- HEAD_svelte-44ysnw_START --><meta name="description" content="Instantly convert complex JSON into clean, readable Markdown documentation. Privacy-first, client-side processing."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><!-- HEAD_svelte-44ysnw_END --><!-- HEAD_svelte-1ol947w_START --><meta name="description" content="Detailed explanation of how JSON keys become Markdown headings, primitive arrays turn into bullet lists, and object arrays are rendered as tables."><meta property="og:title" content="Understanding the Core Conversion Rules | Blog"><meta property="og:description" content="Detailed explanation of how JSON keys become Markdown headings, primitive arrays turn into bullet lists, and object arrays are rendered as tables."><meta property="og:url" content="../../blog/posts/post4"><meta property="og:type" content="article"><meta name="twitter:card" content="summary_large_image"><!-- HEAD_svelte-1ol947w_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div>   <header class="custom-navbar"><nav class="container" style="display: flex; justify-content: space-between; align-items: center;"><div style="display: flex; align-items: center; gap: 1rem;"><a href="../../" aria-label="Home" data-svelte-h="svelte-rkm7h8"><img src="../../AxelLab-Logo.ico" alt="AxelBase Logo" class="navbar-brand-logo"></a> <a class="navbar-brand-text" href="../../" style="text-decoration: none;" data-svelte-h="svelte-pa4unb">AxelBase</a> <div class="coffee-container svelte-mobxso"><button class="coffee-button d-flex align-items-center gap-2 text-white border-0 px-4 py-2 rounded-pill shadow-sm svelte-mobxso" aria-label="Support options" data-svelte-h="svelte-18n2fem"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="svelte-mobxso"><path d="M2,21V19H20V21H2M20,8V5H4V8H20M20,10H4V13C4,14.38 4.5,15.63 5.31,16.58L11.64,19H12.36L18.69,16.58C19.5,15.63 20,14.38 20,13V10M16,2H8V4H16V2Z"></path></svg> <span class="d-none d-sm-inline fw-semibold">Buy me a Coffee</span> <span class="d-sm-none fw-semibold">Coffee</span></button> </div></div> <ul style="list-style: none; display: flex; align-items: center; gap: 2rem; margin: 0;" data-svelte-h="svelte-1biitzk"><li><a class="nav-link" href="../../">Home</a></li> <li><a class="nav-link" href="../../#about">About</a></li> <li><a class="nav-link" href="../../#how-to-use">How to use</a></li> <li><a class="nav-link" href="../../#faq">FAQ</a></li> <li><a class="nav-link" href="../../blog">Blog</a></li></ul></nav></header> <main class="container" style="flex-grow: 1; padding-top: 4rem; padding-bottom: 4rem;">   <div class="container fade-in post-layout svelte-1m5u35w" data-svelte-h="svelte-ajezv5"><div class="breadcrumbs svelte-1m5u35w"><a href="../../blog" class="svelte-1m5u35w">Blog</a> <span>/</span> <p class="svelte-1m5u35w">Understanding the Core Conversion Rules</p></div> <article class="prose svelte-1m5u35w"><h1 class="svelte-1m5u35w">Understanding the Core Conversion Rules</h1> <p class="post-meta svelte-1m5u35w">Published: January 07, 2026</p> <p class="svelte-1m5u35w">The JSON to Markdown Doc Generator applies a set of clear, consistent rules to transform JSON structures into readable Markdown. Knowing these rules helps predict and optimize output for documentation needs.</p> <p class="svelte-1m5u35w">Root-level keys in the JSON object become second-level Markdown headings using the key name as title text. This creates a natural table of contents for the document.</p> <p class="svelte-1m5u35w">Primitive values—strings, numbers, booleans, or null—appear as paragraph text or simple key-value presentations under their heading.</p> <h2 class="svelte-1m5u35w">Array Handling Rules</h2> <ul class="svelte-1m5u35w"><li class="svelte-1m5u35w">Arrays of primitive values render as bullet lists</li> <li class="svelte-1m5u35w">Arrays of objects generate full Markdown tables</li> <li class="svelte-1m5u35w">Empty arrays show as empty lists or tables</li></ul> <p class="svelte-1m5u35w">For primitive arrays, each item becomes a list entry. This works well for enumerations like tags, categories, or status options.</p> <p class="svelte-1m5u35w">When arrays contain objects, the tool extracts all unique keys across items to form table headers. Each object fills a row, with cells aligned properly. Missing properties result in empty cells, ensuring table consistency.</p> <p class="svelte-1m5u35w">Object values trigger recursive processing. Child keys become third-level headings, maintaining the hierarchical outline.</p> <p class="svelte-1m5u35w">Key order is preserved deterministically, guaranteeing identical output from identical input. This reproducibility is essential for version control and audits.</p> <p class="svelte-1m5u35w">Tables include proper piping and alignment syntax compatible with all Markdown renderers, including GitHub and static site generators.</p> <p class="svelte-1m5u35w">These rules strike a balance between fidelity to the source data and readability in the target format. Headings provide structure, lists offer simplicity, and tables handle relational data effectively.</p> <p class="svelte-1m5u35w">Understanding the mappings allows users to structure JSON intentionally for better documentation outcomes. Descriptive keys produce meaningful headings, and consistent object shapes yield cleaner tables.</p> <p class="svelte-1m5u35w">The predictable behavior makes the tool reliable for integration into larger workflows where automated documentation generation is required.</p> <h2 class="svelte-1m5u35w">Frequently Asked Questions</h2> <details class="svelte-1m5u35w"><summary class="svelte-1m5u35w">How are table headers determined?</summary> <p class="svelte-1m5u35w">From the union of all keys in array objects.</p></details> <details class="svelte-1m5u35w"><summary class="svelte-1m5u35w">What happens with mixed array types?</summary> <p class="svelte-1m5u35w">Arrays must be uniform; mixed types may produce unexpected results.</p></details> <details class="svelte-1m5u35w"><summary class="svelte-1m5u35w">Can I influence the output format?</summary> <p class="svelte-1m5u35w">Currently rules are fixed for consistency.</p></details> <p class="italic-note svelte-1m5u35w">Master these rules to create professional documentation from JSON sources.</p></article> </div></main> <footer class="custom-footer"><div class="container" style="display: flex; justify-content: space-between; align-items: center;"><p class="footer-text" style="margin: 0;">© 2026 AxelBase — JSON to Markdown Doc Generator</p> <div style="display: flex; gap: 1.5rem;" data-svelte-h="svelte-gjfyv8"><a href="../../privacy" class="footer-link">Privacy Policy</a> <a href="../../terms" class="footer-link">Terms and Conditions</a></div></div> </footer> 
+			
+			<script>
+				{
+					__sveltekit_7y5b20 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/json-md-doc-generator"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.C4d2YBDx.js"),
+						import("../../_app/immutable/entry/app.CaJs4o-V.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 8],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
